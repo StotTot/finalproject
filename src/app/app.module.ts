@@ -10,6 +10,12 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Stepcounter } from '@ionic-native/stepcounter';
+import { BackgroundMode } from '@ionic-native/background-mode';
+import { FileOpener } from '@ionic-native/file-opener';
+import { FileChooser } from '@ionic-native/file-chooser';
+import { File } from '@ionic-native/file';
+import { LogingPage } from '../pages/loging/loging';
 
 @NgModule({
   declarations: [
@@ -17,7 +23,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    LogingPage
   ],
   imports: [
     BrowserModule,
@@ -29,11 +36,17 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    LogingPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    Stepcounter,
+    FileOpener,
+    FileChooser,
+    BackgroundMode,
+    File
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

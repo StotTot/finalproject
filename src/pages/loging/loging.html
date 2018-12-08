@@ -1,0 +1,24 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Loging</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <p>File Name : </p> <br>
+  <input type="text" class="myTxt" [(ngModel)]="fileName" #ctrl="ngModel"> <br>
+  
+
+  
+  <p>Folder Name : </p>
+  <input type='text' class="myTxt" [(ngModel)]="dirName" #ctrl="ngModel"> <br>
+
+  <buttion ion-button>Start</buttion>
+  <buttion ion-button (click)="writeToFile(fileName,contents,dirName)">Stop & Save</buttion>
+
+</ion-content>
