@@ -46,7 +46,7 @@ import { LogingPage } from '../pages/loging/loging';
     FileOpener,
     FileChooser,
     BackgroundMode,
-    File
+    File,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
